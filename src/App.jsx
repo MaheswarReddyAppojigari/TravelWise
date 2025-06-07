@@ -12,10 +12,12 @@ import CountryList from "./components/CountryList";
 import Form from './components/Form'
 import { useEffect, useState } from "react";
 import { CitiesProvider } from "./contexts/CitiesContext";
+import { AuthProvider } from "./contexts/FakeAuthContext";
 
 function App() {
   
   return (
+    <AuthProvider>
     <CitiesProvider>
     <BrowserRouter>
       {/* <PageNav/> */}
@@ -35,7 +37,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </BrowserRouter> </CitiesProvider>
+    </BrowserRouter> </CitiesProvider> </AuthProvider>
   );
 }
 
