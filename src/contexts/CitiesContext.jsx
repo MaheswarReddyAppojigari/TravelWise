@@ -5,7 +5,7 @@ import {
   useEffect,
   useReducer,
 } from "react";
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://jsonkeeper.com/b/I322";
 const CitiesContext = createContext();
 const initialState = {
   cities: [],
