@@ -3,7 +3,7 @@ import styles from "./Map.module.css";
 import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from "react-leaflet";
 import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
-import { useGeolocation } from "../hooks/useGeoLocation";
+import { useGeolocation } from "../hooks/useGeolocation.js";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import Button from './Button'
 function Map() {
