@@ -23,6 +23,42 @@
         "lat": "43.73830873326025",
         "lng": "11.138505836198634"
       }
+    },
+    {
+      "id": "236c",
+      "cityName": "Adriatic Sea",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2025-06-12T10:43:50.531Z",
+      "notes": "",
+      "position": {
+        "lat": "42.47028040062902",
+        "lng": "14.304199218750002"
+      }
+    },
+    {
+      "id": "6bfd",
+      "cityName": "Cholonge",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2025-06-12T10:43:54.268Z",
+      "notes": "",
+      "position": {
+        "lat": "45.00976874673798",
+        "lng": "5.77880859375"
+      }
+    },
+    {
+      "id": "6b98",
+      "cityName": "Bangarupalem",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2025-06-12T10:44:59.936Z",
+      "notes": "",
+      "position": {
+        "lat": "13.134939760995248",
+        "lng": "78.83789062500001"
+      }
     }
   ]
 }

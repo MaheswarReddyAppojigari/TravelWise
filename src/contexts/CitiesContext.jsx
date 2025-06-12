@@ -1,11 +1,12 @@
 import {
-  useState,
+
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useReducer,
 } from "react";
-const BASE_URL = "https://jsonkeeper.com/b/I322";
+const BASE_URL ="http://localhost:8000";
 const CitiesContext = createContext();
 const initialState = {
   cities: [],
@@ -77,7 +78,7 @@ function CitiesProvider({ children }) {
     }
     fetchCities();
   }, []);
-  async function getCity(id) {
+const getCity=useCallback( async function getCity(id) {
     if(Number(id)===currentCity.id) return
     dispatch({ type: "loading" });
     try {
@@ -90,7 +91,7 @@ function CitiesProvider({ children }) {
         payload: "There was am error loading the data..",
       });
     }
-  }
+  },[currentCity.id])
   async function createCity(newCity) {
     dispatch({ type: "loading" });
     try {
